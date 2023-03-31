@@ -1,28 +1,33 @@
 # Radventure - Children's Book Builder
 
-Radventure is a powerful tool that helps you create engaging and cohesive children's books using OpenAI's GPT-3.5-turbo model. This Python application streamlines the process of generating prompts, outlines, and content for your children's book.
+Radventure is a Python script that uses OpenAI's GPT-3.5-turbo to generate a unique story based on user input. The script takes user input for genre, target audience, theme, setting, content hint, and a twist option. It generates a story outline, writes a draft, refines the draft, and creates a finished PDF copy with a generated photo, title, and story text.
 
 # Features
-Customizable input for genre, target audience, theme, and additional details.
+Customizable input for genre, target audience, theme, setting, additional details and an optional twist.
 Enhanced prompts and outlines using GPT-3.5-turbo.
 Automated drafting, editing, and continuity checks.
-Export your final story as a text file.
+Automated cover photo generation.
+Export your final story as a pdf file with an appropriate cover photo for the story.
 
 
 # Dependencies
-Python 3.6 or later
+Python 3
 OpenAI Python package
-Transformers Python package
+Requests
+Pillow
+ReportLab
+Backoff
+Transformers
 
 
 # Usage
 Install the required Python packages:
 
-pip install openai transformers
+pip install openai backoff requests pillow reportlab transformers 
 
-Clone the repository or copy the BookBuilderHelpers.py and main script to your local machine.
+Clone the repository or copy the BookBuilderHelpers.py and BookBuilderTest.py to your local machine.
 
-Set up your OpenAI API key in a config.ini file. Refer to the instructions below.
+Set up your OpenAI API key in a config.ini file (refer to the instructions below).
 
 Run the main script in your terminal:
 
@@ -30,7 +35,7 @@ python your_main_script_name.py
 
 Follow the prompts to input your story's genre, target audience, theme, and additional details.
 
-The script will create an enhanced prompt, outline, draft, and refine the story. Your final story will be saved as a .txt file in the same directory.
+The script will create an enhanced prompt, outline, draft, edit, refine and create a photo for the story. Your final story will be saved as a .pdf file in the same directory.
 
 # API Key Setup
 To use Radventure, you need to set up your OpenAI API key. Create a config.ini file in the same directory as your main script and BookBuilderHelpers.py with the following content:
