@@ -31,9 +31,9 @@ Set up your OpenAI API key in a config.ini file (refer to the instructions below
 
 Run the main script in your terminal:
 
-python your_main_script_name.py
+python BookBuilderTest.py
 
-Follow the prompts to input your story's genre, target audience, theme, and additional details.
+Follow the prompts to input your story's genre, target audience, theme, setting, additional details and if you'd like a twist.
 
 The script will create an enhanced prompt, outline, draft, edit, refine and create a photo for the story. Your final story will be saved as a .pdf file in the same directory.
 
