@@ -37,6 +37,8 @@ Follow the prompts to input your story's genre, target audience, theme, setting,
 
 The script will create an enhanced prompt, outline, draft, edit, refine and create a photo for the story. Your final story will be saved as a .pdf file in the same directory.
 
+4/4/2023 - You can now use the BookBuilderGUI.py file to run a simple tkinter-based GUI for Radventure
+
 # API Key Setup
 To use Radventure, you need to set up your OpenAI API key. Create a config.ini file in the same directory as your main script and BookBuilderHelpers.py with the following content:
 
